@@ -1,0 +1,228 @@
+%-------------------------
+% Resume in Latex
+% Author : Sidratul Muntaha Ahmed
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      {\small#3} & {\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+
+
+\begin{center}
+    \textbf{\Huge \scshape Lucas Towers} \\ 
+    \large Software Engineer
+    \\ \small \href{mailto: luctowers@gmail.com}{\underline{luctowers@gmail.com}} $|$ 
+    {\underline{(778)-932-2529}} $|$
+    \href{https://github.com/luctowers}{\underline{github.com/luctowers}} $|$
+    \href{https://linkedin.com/in/luctowers}{\underline{linkedin.com/in/luctowers}}
+\end{center}
+
+%-----------Work History-----------
+\section{Work History}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Cisco Systems, Inc.}{Calgary, AB}
+      {Software Engineer Intern, Cisco AMP Data Team}{May 2020 - Present}
+      \resumeItemListStart
+        \resumeItem{Worked remotely full-time for the first 16 months, part-time since}
+        \resumeItem{Cooperated on a team of 20+ individuals, including Devs, QAs, Ops, Managers and Product Owners}
+        \resumeItem{Focused on distributed data processing, streaming, storage on AWS}
+        \resumeItem{Developed features and projects using Apache Spark, Flink and Kafka in Java, Scala and Python}
+        \resumeItem{Developed features for HTTP APIs written in Go, Ruby and Java}
+        \resumeItem{Developed features for services that interact with Cassandra, Elasticsearch, Redis and S3 data lakes}
+        \resumeItem{Participated in the entire Agile development process with two week sprints for the entirety of the
+        internship, from requirement gathering to evaluation}
+      \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of British Columbia Okanagan}{Kelowna, BC}
+      {Bachelor of Science, Major in Computer Science}{September 2018 - December 2022}
+          \resumeItemListStart
+            \resumeItem{Will complete all graduation requirements by end of 2022}
+            \resumeItem{Degree will be conferred Spring 2023}
+        \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%
+%-----------SKILLS-----------
+\section{Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+      \resumeItemListStart
+      \resumeItem{Fluent in both English and French}
+      \resumeItem{Strong programming languages Python, Java, C, Javascript and Go}
+      \resumeItem{Other programming languages Scala, Rust, C++ and Ruby}
+      \resumeItem{Experience working with extremely large data sets and streams}
+    \resumeItemListEnd
+    }}
+ \end{itemize}
+
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+\resumeSubHeadingListStart
+    \resumeProjectHeading
+          {\textbf{Monte} $|$ \textbf{Java} $|$ \href{https://github.com/luctowers/montejava}{\underline{github.com/luctowers/montejava}}}{January 2022 - April 2022}
+          \begin{itemize}[leftmargin=0.0in, label={}]
+    \small{\item{
+     {A specialized multithreaded implementation of Monte Carlo Tree Search for the Game of Amazons (a turn-based game like Chess and Go). This AI was created to compete in a class tournament in COSC 322 Introduction to Artificial Intelligence. Monte won the tournament with an undefeated record of 16-0.}
+    }}
+ \end{itemize}
+          
+ \resumeProjectHeading
+ {\textbf{Fwends} $|$ \textbf{Go/JS/Python} $|$ \href{https://github.com/luctowers/fwends}{\underline{github.com/luctowers/fwends}}}{December 2021 - Present}
+ \begin{itemize}[leftmargin=0.0in, label={}]
+\small{\item{
+{A work-in-progress web-app to synchronize a randomized improvised music performance between many performers. Uses Kubernetes and Skaffold for deployment, JS and React for frontend, Go for the API, Postgres for DB, Python for integration tests and Github Actions for CI. Creating for a friend doing music composition at UVIC.}
+}}
+\end{itemize}
+
+\resumeProjectHeading
+{\textbf{4KGBA} $|$ \textbf{C} $|$ \href{https://github.com/luctowers/4kgba}{\underline{github.com/luctowers/4kgba}}}{2019 - Present}
+\begin{itemize}[leftmargin=0.0in, label={}]
+\small{\item{
+{Games written from scratch for the Game Boy Advance whose exported ROMs are 4096 bytes or smaller.}
+}}
+\end{itemize}
+
+\resumeProjectHeading
+{\textbf{Wikimash} $|$ \textbf{Javascript} $|$ \href{https://github.com/luctowers/wikimash}{\underline{github.com/luctowers/wikimash}} $|$ \href{https://luctowers.github.io/wikimash}{\underline{luctowers.github.io/wikimash}}}{$\sim$2018}
+\begin{itemize}[leftmargin=0.0in, label={}]
+\small{\item{
+{Web-app that finds hyperlink paths between Wikipedia articles using the MediaWiki API with a bidirectional search algorithm. Full writeup in the README.}}}
+\end{itemize}
+
+    \resumeSubHeadingListEnd
+
+
+%
+%-----------PERSONAL INTERESTS-----------
+\section{Personal Interests}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+      Retro video game modding $|$ Multiplayer game development $|$ Film photography $|$ Bouldering
+    }}
+ \end{itemize}
+
+%-----------REFERENCES-----------
+\section{References}
+\resumeSubHeadingListStart
+    \resumeProjectHeading
+          {\textbf{Maxine Chan} $|$ \textbf{TextIQ Engineering Manager} $|$ \textbf{Former Engineering Manager at Cisco} $|$ {\textbf{(403)-918-0702}}}{}
+          \begin{itemize}[leftmargin=0.0in, label={}]
+    \small{\item{
+     {My boss for the entirety of my full-time employment at Cisco.}
+    }}
+ \end{itemize}
+
+    \resumeSubHeadingListEnd
+
+
+%-------------------------------------------
+\end{document}
